@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(bg3.jpg);
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+   
+}
+.logo-png{
+    height:150px;
+    padding-bottom: 40px;
+    
+}
+.navigations{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between ;
+    align-items: center;    
+    height: 100px;
+    padding-top: 57px;
+    background-color: #3B270C;
+    z-index: 99;
+    padding-bottom:10px;
+    border:solid transparent;
+    
+}
+.nav-bar a{
+    position: relative;
+    font-size: 1em;
+    color:#FEC20C;
+    text-decoration: none;
+    font-weight:500;
+    margin-left: 40px ;
+    margin-right: 10px;
+     
+}
+.nav-bar a::after{
+    content :'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+     width: 100% ;
+    height: 3px;
+    background: #FEC20C;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+ 
+     
+}
+.nav-bar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+.choices-border{
+    
+    height: 400px;
+    width: 700px;
+   display: inline-flex;
+    position: relative;
+    border-radius: 20px;
+    justify-content: center;
+    margin-left: 350px;
+    margin-top:75px;
+    border: 2px solid gray;
+    backdrop-filter: blur 20px;
+    background:white;
+
+   
+}
+.coffee-selection{
+margin-top: 90px;
+ border: white solid;
+ height: fit-content;
+}
+.milktea-selection{
+    margin-top: 90px;
+     border: white solid;
+     height: fit-content;
+    }
+.Coffeeproduct-class{
+margin-left: 94px;
+font-size: 30px;
+margin-bottom: 120px;
+}
+.milkteaproduct-class{
+margin-left: 94px;
+font-size: 30px;
+margin-bottom: 120px;
+}
+.coffee-buttons{
+    width: 200px;
+    height: 30px;
+    border-radius:20px;
+    background-color: #3B270C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.milktea-buttons{
+    width: 200px;
+    height: 30px;
+    border-radius:20px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.MT-Button{
+margin-left: 50px;
+}
+.Cof-Button{
+    margin-left: 60px;
+}
+.milktea-buttons:hover{
+    opacity: 0.7;
+    background-color: #FEC20C;
+}
+.milktea-buttons:active{
+    opacity: 0.4;
+    background-color:white ;
+}
+.coffee-buttons:hover{
+ opacity: 0.9;
+ color: black;
+}
+.coffee-buttons:active{
+    opacity: 0.4;
+    background-color: #FEC20C;
+}
+.coffee-description,.milktea-description{
+    font-size: 20px;
+    margin-bottom:20px;
+    background-color: #FEC20C;
+    font-weight: 400;
+    
+}
+
+
+
